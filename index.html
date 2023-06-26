@@ -14,16 +14,23 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
             <p>Software Engineer</p>
-            <h1>Hi, I'm Nourhan Ahmed</h1>
+            <h1>
+                Hello there! <br> I'm Nourhan Ahmed
+                <span class="hello-sign">
+                    <i class="fas fa-hand-sparkles"></i>
+                </span>
+            </h1>
+            <h6> 
+                My lifetime goal is to keep learning new skills continuously and help make people's life easier and safer using technology.</p>
+            </h6>
         </div>
     </div> 
 </div>
@@ -36,7 +43,10 @@
             </div>  
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>My name is Nourhan Ahmed, Junior Software Engineer in Computer Engineering Department, Cairo University. I am generally interested in developing Mobile Applications on Cross Platforms, Databases and Cloud Computing. My lifetime goal is to keep learning new skills continuously and help make people's life easier and safer using technology.</p>
+                <p>My name is Nourhan Ahmed, senior in Computer Engineering at Cairo University. I am currently a web development intern at SilverKey company. 
+                <br>I am generally interested in developing Mobile Applications on Cross Platforms. 
+                <br>Beside the tech field I am a professional self-taught baker, I make customized birthday cakes.
+                </p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -45,51 +55,73 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Software</span><br>other text</li>
-                        <li><span>Software</span><br>other text</li>
-                        <li><span>Software</span><br>other text</li> 
+                        <li><span>Flutter/Dart</span><br>cross-platform mobile app development</li>
+                        <li><span>HTML/CSS</span><br>web development</li>
+                        <li><span>Swift</span><br>ios native mobile app development</li> 
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>hi</span><br>hhh</li>
-                        <li><span>Software</span><br>other text</li>
-                        <li><span>kk</span><br>hjk text</li> 
+                        <li><span>VMware Summer Workshop-VMware</span><br>August 2022 - September 2022</li>
+                        <li><span>IOS Mobile Application Internship-Orange</span><br>July 2022 - August 2022</li>
+                        <li><span>Transport Automation Engineer Intern-Vodafone</span><br>Jan 2022 - Feb 2022</li> 
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>jkl</span><br> text</li>
-                        <li><span>Software</span><br> text</li>
-                        <li><span>Software</span><br> text</li> 
+                        <li><span>Cairo University-Faculty of Engineering</span><br>Sep 2019 - Present</li>
+                        <li><span>IGCSE (A-Level & O-Levels) at Summits International School</span><br>Sep 2016 - June 2019</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!----------services--------->
-<div id="services">
+<!----------projects--------->
+<div id="projects">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-cake-candles"></i>                <h2>Web Design</h2>
-                <p>its description</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h2>Wmob app</h2>
-                <p>its description</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <h2>cake</h2>
-                <p>its description</p>
-                <a href="#">Learn more</a>
-            </div>
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <a href="https://github.com/Yosef-Adel/SW-MOBILE-project.git">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Eventbrite Mobile App</h2>
+                    <p>An app called envie which is a replica for Eventbrite's mobile app with all features using Flutter</p>
+                </div>
+            </a>
+            <a href="https://github.com/AbdelrahmanMohamed129/Search-engine.git">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>                   
+                    <h2>Search Engine</h2>
+                    <p>A search engine with full UI and a seed of 6000 websites using Java</p>
+                </div>
+            </a>
+            <a href="images/cakes.jpg" target="_blank">
+                <div>
+                  <i class="fa-solid fa-cake-candles"></i> 
+                  <h2>Cakes</h2>
+                  <p>Some pictures of customized birthday cakes I made for orders</p>
+                </div>
+              </a>       
         </div>
+    </div>
+</div>
+<!------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="contact">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>nourhanhelmy01@outlook.com</p>
+            <p><i class="fa-solid fa-phone"></i>+201271377705</p>
+            <div class="social-icons">
+                <a href="https://github.com/nourhanhelmy1"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/NourhanAhmedHelmy/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/CV.pdf" class="cv-button">Check My CV</a>
+        </div>
+    </div> I
+    <div class="copyright"> I
+        <p>Copyright @2023 Nourhan Ahmed.</p>
     </div>
 </div>
 
