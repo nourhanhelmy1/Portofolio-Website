@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808; 
+    background: #efbac0; 
     color: #fff;
 }
 #header{
@@ -35,14 +35,15 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     position: relative;
 }
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
-    background: #ff004f;
+    height: 5px;
+    background: #d13d7d;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -58,4 +59,108 @@ width: 100%;
 .header-text h1{
     margin-top: 20px;
     font-size: 60px;
+}
+/*----about me-----*/
+#about{
+    padding: 80px 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 200;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{ 
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #d13d7d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*----Services----->*/
+#services{
+    padding:30px 0;
+}
+.services-list{
+    display:flex;
+    justify-content: space-between;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    flex-basis: 30%;
+    padding: 20px;
+    background-color: #eba7af;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px; 
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #d13d7d;
+    transform: translateY(-10px);
 }

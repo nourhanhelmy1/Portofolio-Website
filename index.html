@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portofolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/274a0d0d03.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -26,6 +27,88 @@
         </div>
     </div> 
 </div>
+<!----about me----->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>  
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Nourhan Ahmed, Junior Software Engineer in Computer Engineering Department, Cairo University. I am generally interested in developing Mobile Applications on Cross Platforms, Databases and Cloud Computing. My lifetime goal is to keep learning new skills continuously and help make people's life easier and safer using technology.</p>
 
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software</span><br>other text</li>
+                        <li><span>Software</span><br>other text</li>
+                        <li><span>Software</span><br>other text</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>hi</span><br>hhh</li>
+                        <li><span>Software</span><br>other text</li>
+                        <li><span>kk</span><br>hjk text</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>jkl</span><br> text</li>
+                        <li><span>Software</span><br> text</li>
+                        <li><span>Software</span><br> text</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cake-candles"></i>                <h2>Web Design</h2>
+                <p>its description</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Wmob app</h2>
+                <p>its description</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>cake</h2>
+                <p>its description</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 </body>
 </html>
