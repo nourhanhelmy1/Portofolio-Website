@@ -14,12 +14,14 @@
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Software Engineer</p>
@@ -82,14 +84,14 @@
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
-            <a href="https://github.com/Yosef-Adel/SW-MOBILE-project.git">
+            <a href="https://github.com/Yosef-Adel/SW-MOBILE-project.git" target="_blank">
                 <div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h2>Eventbrite Mobile App</h2>
                     <p>An app called envie which is a replica for Eventbrite's mobile app with all features using Flutter</p>
                 </div>
             </a>
-            <a href="https://github.com/AbdelrahmanMohamed129/Search-engine.git">
+            <a href="https://github.com/AbdelrahmanMohamed129/Search-engine.git" target="_blank">
                 <div>
                     <i class="fa-solid fa-magnifying-glass"></i>                   
                     <h2>Search Engine</h2>
@@ -119,8 +121,8 @@
             </div>
             <a href="images/CV.pdf" class="cv-button">Check My CV</a>
         </div>
-    </div> I
-    <div class="copyright"> I
+    </div>
+    <div class="copyright">
         <p>Copyright @2023 Nourhan Ahmed.</p>
     </div>
 </div>
@@ -140,5 +142,17 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
 </body>
 </html>
