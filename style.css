@@ -144,9 +144,10 @@ nav ul li a:hover::after{
     padding:30px 0;
 }
 .projects-list{
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    grid-gap: 40px;
+    grid-gap: 30px;
     margin-top: 50px;
 }
 .projects-list div{
@@ -157,6 +158,8 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: background-color 0.5s, transform 0.5s;
+    width: 450px;
+    height: 250px;
 }
 .projects-list div i{
     font-size: 50px;
@@ -164,8 +167,11 @@ nav ul li a:hover::after{
 }
 .projects-list div h2{
     font-size: 30px; 
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 15px;
+}
+.projects-list div p{
+    font-size: 20px; 
 }
 .projects-list a div{
     text-decoration: none;
@@ -276,6 +282,7 @@ nav .fas{
         font-size: 14px;
     }
     .projects-list {
+        display: flex;
         flex-wrap: wrap;
     }
     .projects-list div {
